@@ -17,13 +17,13 @@ Example of data storage on the server:
 | "server.cpu" | 0.5 | 1150864248 |
 | "other.cpu" | 0.5 | 1150864250 |
 
-If request `get server.cpu\n`, the server will send the string:
+If the request is `get server.cpu\n`, the server will send the string:
 
 > ok\nserver.cpu 2.0 1150864247\nserver.cpu 0.5 1150864248\n\n
 
 <br>
 
-If request `get *\n`, the server will send the string:
+If the request is `get *\n`, the server will send the string:
 
 > ok\nserver.cpu 2.0 1150864247\nserver.cpu 0.5 1150864248\nother.cpu 3.0 1150864250\n\n
 
